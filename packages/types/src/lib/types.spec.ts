@@ -1,7 +1,8 @@
-import { types } from './types.js';
+import { Greeting } from './types.js';
 
 describe('types', () => {
   it('should work', () => {
-    expect(types()).toEqual('types');
+    const g: Greeting = { message: 'hello' }
+    expect(g).toHaveProperty('message');
   });
 });

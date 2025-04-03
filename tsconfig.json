@@ -29,12 +29,6 @@
     },
     {
       "path": "./apps/frontend/words"
-    },
-    {
-      "path": "./apps/frontend-e2e"
-    },
-    {
-      "path": "./apps/frontend"
     }
   ]
 }

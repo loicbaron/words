@@ -1,0 +1,9 @@
+{
+  "name": "@playground/tailwind",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0"
+  }
+}

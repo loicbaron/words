@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import styles from './app.module.scss';
+import Results from './Results';
 
 type User = {
   name: string;
@@ -9,6 +10,7 @@ type User = {
 }
 
 export function App() {
+  const [isLoading, setIsLoading] = useState(false);
   const [search, setSearch] = useState<string | undefined>(undefined);
   const [results, setResults] = useState<User[] | null>(null);
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -16,9 +18,14 @@ export function App() {
     submit();
   };
   const submit = async () => {
+    setIsLoading(true)
     // const res = await searchUsers(search);
     const res = [{ name: 'Loïc Baron', email: 'loic@example.com', company: 'Example' }];
-    setResults(res)
+    // const res: User[] = []
+    setTimeout(() => {
+      setResults(res)
+      setIsLoading(false)
+    }, 2000);
   }
   return (
     <div>
@@ -30,21 +37,8 @@ export function App() {
         />
         <button type='submit'>send</button>
       </form>
-      {results && (
-        <div>
-          <h1>Results</h1>
-        </div>
-      )}
-      {
-        results?.map(user => {
-          return (
-            <div key={user.email} className={styles.user}>
-              <div>Name: {user.name}</div>
-              <div>Email: {user.email}</div>
-              <div>Company: {user.company}</div>
-            </div>
-          )
-        })
+      {isLoading ? <div className={styles.loading}>Loading...</div> :
+        <Results results={results} />
       }
     </div>
   );

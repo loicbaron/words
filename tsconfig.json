@@ -35,6 +35,12 @@
     },
     {
       "path": "./apps/frontend/search"
+    },
+    {
+      "path": "./apps/frontend/timer-e2e"
+    },
+    {
+      "path": "./apps/frontend/timer"
     }
   ]
 }

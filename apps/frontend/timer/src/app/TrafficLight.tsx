@@ -28,5 +28,10 @@ export default function TrafficLight() {
     }, colorsMap[color].wait)
     return (() => clearTimeout(id))
   }, [color])
-  return <div>Traffic Light is {color}.</div>;
+
+  return (<div className="traffic-light-container">
+    {Object.entries(colorsMap).map(([key]) => {
+      return (<div key={key} className={`traffic-light`} style={{ backgroundColor: key === color ? key : 'gray' }} />);
+    })}
+  </div>)
 }

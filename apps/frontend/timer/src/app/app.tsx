@@ -37,7 +37,9 @@ export function App() {
   return (
     <div>
       <p>Elapsed time: {seconds} seconds</p>
-      <p><TrafficLight /></p>
+      <div className="wrapper">
+        <TrafficLight />
+      </div>
     </div>
   );
 }

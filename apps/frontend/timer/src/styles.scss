@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+
+.traffic-light-container {
+  background-color: #000;
+  border-radius: 8px;
+  display: flex;
+  padding: 8px;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.traffic-light {
+  --size: 50px;
+  background-color: #555;
+  border-radius: var(--size);
+  height: var(--size);
+  width: var(--size);
+}

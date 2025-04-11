@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import TrafficLight from './TrafficLight';
+import ProgressBarHandler from './ProgressBarHandler';
+import ProgressBars from './ProgressBars';
 
 
 function useInterval(callback: () => void, delay: number | null): void {
@@ -36,9 +38,23 @@ export function App() {
 
   return (
     <div>
+      <div>
+        <h1>Timer</h1>
       <p>Elapsed time: {seconds} seconds</p>
+      </div>
+      <div>
+        <h1>Traffic Light</h1>
       <div className="wrapper">
         <TrafficLight />
+      </div>
+      </div >
+      <div>
+        <h1>Progress Bar Handler</h1>
+        <ProgressBarHandler />
+      </div>
+      <div>
+        <h1>Multiple Progress Bars</h1>
+        <ProgressBars />
       </div>
     </div>
   );

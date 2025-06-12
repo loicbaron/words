@@ -1,10 +1,10 @@
 {
-  "name": "@playground/datadog-e2e",
+  "name": "@playground/tables-e2e",
   "version": "0.0.1",
   "private": true,
   "nx": {
     "implicitDependencies": [
-      "@playground/datadog"
+      "@playground/tables"
     ]
   }
 }

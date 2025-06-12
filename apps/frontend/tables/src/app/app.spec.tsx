@@ -20,7 +20,7 @@ describe('App', () => {
       </BrowserRouter>
     );
     expect(
-      getAllByText(new RegExp('Welcome @playground/datadog', 'gi')).length > 0
+      getAllByText(new RegExp('Welcome @playground/tables', 'gi')).length > 0
     ).toBeTruthy();
   });
 });

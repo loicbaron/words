@@ -41,6 +41,42 @@
     },
     {
       "path": "./apps/frontend/timer"
+    },
+    {
+      "path": "./apps/frontend/fileExplorer-e2e"
+    },
+    {
+      "path": "./apps/frontend/fileExplorer"
+    },
+    {
+      "path": "./apps/frontend/diceRoller-e2e"
+    },
+    {
+      "path": "./apps/frontend/diceRoller"
+    },
+    {
+      "path": "./apps/frontend/todoList-e2e"
+    },
+    {
+      "path": "./apps/frontend/todoList"
+    },
+    {
+      "path": "./apps/frontend/tabs-e2e"
+    },
+    {
+      "path": "./apps/frontend/tabs"
+    },
+    {
+      "path": "./apps/frontend/login-e2e"
+    },
+    {
+      "path": "./apps/frontend/login"
+    },
+    {
+      "path": "./apps/frontend/tables-e2e"
+    },
+    {
+      "path": "./apps/frontend/tables"
     }
   ]
 }
